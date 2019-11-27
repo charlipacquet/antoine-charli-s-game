@@ -400,7 +400,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Karting/Prefabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Colinou\Documents\Github\KartingMicrogame
+  m_LastProjectPath: C:\Users\charli\Documents\antoine&charli's game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
