@@ -111,6 +111,7 @@
             </e>
           </e>
         </e>
+        <e p="keyboarkarttwo.cs" t="Include" />
         <e p="Mod Assets" t="Include">
           <e p="ModResources" t="Include">
             <e p="Scripts" t="Include">

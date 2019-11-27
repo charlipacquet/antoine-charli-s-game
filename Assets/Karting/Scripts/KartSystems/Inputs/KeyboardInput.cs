@@ -76,11 +76,11 @@ namespace KartGame.KartSystems
             m_HopPressed |= Input.GetKeyDown (KeyCode.Space);
             m_BoostPressed |= Input.GetKeyDown (KeyCode.RightShift);
             m_FirePressed |= Input.GetKeyDown (KeyCode.RightControl);
-            if (Input.GetKeyUp(KeyCode.T))
+            if (Input.GetKeyUp(KeyCode.RightAlt))
             {
                 // Instantiate the projectile at the position and rotation of this transform
                 Rigidbody clone;
-                clone = Instantiate(projectile, transform.position, transform.rotation);
+                clone = Instantiate(projectile, transform.position-transform.forward, transform.rotation);
                 
             }
         }
