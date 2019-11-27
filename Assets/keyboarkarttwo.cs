@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class keyboarkarttwo : MonoBehaviour
 {
-    public float Acceleration
+    public float Acceleration1
         {
             get { return m_Acceleration; }
         }
         
         public Rigidbody projectile;
 
-        public float Steering
+        public float Steering1
         {
             get { return m_Steering; }
         }
-        public bool BoostPressed
+        public bool BoostPressed1
         {
             get { return m_BoostPressed; }
         }
-        public bool FirePressed
+        public bool FirePressed1
         {
             get { return m_FirePressed; }
         }
-        public bool HopPressed
+        public bool HopPressed1
         {
             get { return m_HopPressed; }
         }
-        public bool HopHeld
+        public bool HopHeld1
         {
             get { return m_HopHeld; }
         }

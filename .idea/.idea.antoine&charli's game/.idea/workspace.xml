@@ -12,14 +12,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Karting/Scripts/KartSystems/KartMovement/Editor/KartMovementEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Karting/Scripts/Track/Racer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Karting/Scripts/KartSystems/KartMovement/KartMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/keyboarkarttwo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Karting/Scripts/KartSystems/Inputs/KeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Karting/Scripts/KartSystems/Inputs/GamepadInput.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/keyboarkarttwo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Karting/Scripts/KartSystems/Inputs/GamepadInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Karting/Scripts/KartSystems/Inputs/KeyboardInput.cs" />
       </list>
     </option>
@@ -70,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574861043318</updated>
-      <workItem from="1574861050932" duration="4586000" />
+      <workItem from="1574861050932" duration="8171000" />
     </task>
     <servers />
   </component>

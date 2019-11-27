@@ -46,23 +46,32 @@ namespace KartGame.KartSystems
 
         bool m_FixedUpdateHappened;
 
+        public KeyCode touchePourAvancer;
+        public KeyCode touchepourReculer;
+        public KeyCode touchepourDroite;
+        public KeyCode touchepourGauche;
+        public KeyCode touchepoursauter;
+        public KeyCode touchepourCube;
+        public KeyCode touchepourBoost;
+        public KeyCode touchepourFire;
+
         void Update ()
         {
-            if (Input.GetKey (KeyCode.UpArrow))
+            if (Input.GetKey (touchePourAvancer))
                 m_Acceleration = 1f;
-            else if (Input.GetKey (KeyCode.DownArrow))
+            else if (Input.GetKey (touchepourReculer))
                 m_Acceleration = -1f;
             else
                 m_Acceleration = 0f;
 
-            if (Input.GetKey (KeyCode.LeftArrow) && !Input.GetKey (KeyCode.RightArrow))
+            if (Input.GetKey (touchepourGauche) && !Input.GetKey (touchepourDroite))
                 m_Steering = -1f;
-            else if (!Input.GetKey (KeyCode.LeftArrow) && Input.GetKey (KeyCode.RightArrow))
+            else if (!Input.GetKey (touchepourGauche) && Input.GetKey (touchepourDroite))
                 m_Steering = 1f;
             else
                 m_Steering = 0f;
 
-            m_HopHeld = Input.GetKey (KeyCode.Space);
+            m_HopHeld = Input.GetKey (touchepoursauter);
 
             if (m_FixedUpdateHappened)
             {
@@ -73,15 +82,14 @@ namespace KartGame.KartSystems
                 m_FirePressed = false;
             }
 
-            m_HopPressed |= Input.GetKeyDown (KeyCode.Space);
-            m_BoostPressed |= Input.GetKeyDown (KeyCode.RightShift);
-            m_FirePressed |= Input.GetKeyDown (KeyCode.RightControl);
-            if (Input.GetKeyUp(KeyCode.RightAlt))
+            m_HopPressed |= Input.GetKeyDown (touchepoursauter);
+            m_BoostPressed |= Input.GetKeyDown (touchepourBoost);
+            m_FirePressed |= Input.GetKeyDown (touchepourFire);
+            if (Input.GetKeyUp(touchepourCube))
             {
                 // Instantiate the projectile at the position and rotation of this transform
                 Rigidbody clone;
-                clone = Instantiate(projectile, transform.position-transform.forward, transform.rotation);
-                
+                clone = Instantiate(projectile, transform.position - transform.forward, transform.rotation);
             }
         }
 
